@@ -1,3 +1,35 @@
 * {
     font-family: 'Manjari', sans-serif;
 }
+
+#introduction {
+    font-size: 30px;
+    width: 100%;
+}
+
+html , body { /* whole html */
+    background-color: rgb(64, 64, 64);
+    color: ghostwhite; /* text-color */
+    text-shadow: 1px 1px 1px black;
+    margin: 35px 0 0 0;
+}
+
+header { /* logo and introduction */
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: rgb(48, 48, 48);
+    vertical-align: center;
+}
+
+header:hover{ /* logo and introduction */
+    box-shadow:0 -10px 30px rgb(122, 122, 122);
+}
+
+nav { /* logo and introduction */
+    display: flex;
+    align-items: center;
+}
+nav div { /* logo and introduction */
+    padding: 5px 5px 0px 5px;
+}
