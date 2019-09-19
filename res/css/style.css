@@ -30,6 +30,27 @@ nav { /* logo and introduction */
     display: flex;
     align-items: center;
 }
+
 nav div { /* logo and introduction */
     padding: 5px 5px 0px 5px;
+}
+
+section {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.link{
+    color: #5F9EA0;
+}
+
+.profile_picture{
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 300px;
+}
+
+section > h1{
+    color: steelblue;
+    margin-top: 35px;
 }
