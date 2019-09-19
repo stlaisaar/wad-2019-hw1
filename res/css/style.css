@@ -10,7 +10,6 @@
 html , body { /* whole html */
     background-color: rgb(64, 64, 64);
     color: ghostwhite; /* text-color */
-    text-shadow: 1px 1px 1px black;
     margin: 35px 0 0 0;
 }
 
@@ -36,8 +35,8 @@ nav div { /* logo and introduction */
 }
 
 section {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 90px;
+    margin-left: 90px;
 }
 
 .link{
@@ -45,12 +44,54 @@ section {
 }
 
 .profile_picture{
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 300px;
+    margin: 35px 35px 35px 35px;
+    margin-bottom: 90px;
+    width: 200px;
+    float: left;
 }
 
 section > h1{
-    color: steelblue;
-    margin-top: 35px;
+    color: lightblue;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.info{
+    margin-top: 100px;
+    margin-right: 35px;
+    float: left;
+    font-size: 20px;
+}
+
+.number{
+    float: left;
+    margin-top: 110px;
+    margin-left: 35px;
+    font-size: 50px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th{
+    background: dimgray;
+    color: white;
+}
+
+tr{
+    background: lightgray;
+    color: black;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
 }
