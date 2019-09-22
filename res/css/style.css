@@ -51,7 +51,7 @@ section {
 }
 
 section > h1{
-    color: lightblue;
+    color: #5F9EA0;
     margin-bottom: 10px;
     clear: both;
 }
@@ -61,6 +61,12 @@ section > h1{
     margin-right: 35px;
     float: left;
     font-size: 20px;
+    color:#5F9EA0;
+}
+
+
+.info li ~ li { /*general sibling combinator*/
+    color: #FFFFFF;
 }
 
 .number{
@@ -78,16 +84,21 @@ table{
 table, th, td{
     border: 1px solid black;
     padding: 10px;
+
 }
+
+table, th, td ~ td { /*general sibling combinator*/
+    color:#000000;
+} 
 
 th{
     background: dimgray;
-    color: white;
+    color: #5F9EA0;
 }
 
 tr{
     background: lightgray;
-    color: black;
+    color:#5F9EA0;
 }
 
 footer{
