@@ -19,6 +19,7 @@ header { /* logo and introduction */
     position: fixed;
     background-color: rgb(48, 48, 48);
     vertical-align: center;
+
 }
 
 header:hover{ /* logo and introduction */
@@ -30,7 +31,7 @@ nav { /* logo and introduction */
     align-items: center;
 }
 
-nav div { /* logo and introduction */
+nav div { /* logo and introduction */ /* descendant combinator*/
     padding: 5px 5px 0px 5px;
 }
 
@@ -43,12 +44,21 @@ section {
     color: #5F9EA0;
 }
 
+.linktable{
+    text-decoration: none;
+    color: #000000;
+}
 .profile_picture{
     margin: 35px 35px 35px 35px;
     margin-bottom: 90px;
     width: 200px;
     float: left;
 }
+
+a:hover{
+    color:#5F9EA0;
+}
+
 
 section > h1{
     color: #5F9EA0;
@@ -62,6 +72,7 @@ section > h1{
     float: left;
     font-size: 20px;
     color:#5F9EA0;
+
 }
 
 
@@ -81,19 +92,22 @@ table{
     border-collapse: collapse;
 }
 
+
 table, th, td{
     border: 1px solid black;
     padding: 10px;
 
 }
+tr > td { /* child combinator*/
+    color:#5F9EA0;
+}
 
-table, th, td ~ td { /*general sibling combinator*/
+table, th, td {
     color:#000000;
 } 
 
 th{
     background: dimgray;
-    color: #5F9EA0;
 }
 
 tr{
@@ -101,8 +115,13 @@ tr{
     color:#5F9EA0;
 }
 
+tr:hover{
+    background-color: dimgray;
+}
+
 footer{
     position: fixed;
-    bottom: 0px;
-    left: 50%;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
 }
